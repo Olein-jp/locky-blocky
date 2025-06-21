@@ -1,7 +1,6 @@
 {
   "name": "locky-blocky",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "build": "wp-scripts build",
     "start": "wp-scripts start",
@@ -10,10 +9,9 @@
     "zip:archive": "zip -9 -qmr locky-blocky.zip locky-blocky",
     "zip": "npm run clean:zip && npm run zip:pack && npm run zip:archive"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Koji Kuno",
+  "license": "GPL-2.0-or-later",
+  "description": "A plugin that lets administrators easily toggle the block template lock (contentOnly) from the WordPress block editor toolbar. Take flexible control over your editing experience. (Available to administrators only. The menu is not displayed for users with editor or lower capabilities.)",
   "devDependencies": {
     "@wordpress/scripts": "^30.18.0",
     "rimraf": "^6.0.1"
