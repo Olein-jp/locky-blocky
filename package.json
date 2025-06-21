@@ -4,13 +4,18 @@
   "main": "index.js",
   "scripts": {
     "build": "wp-scripts build",
-    "start": "wp-scripts start"
+    "start": "wp-scripts start",
+    "clean:zip": "rimraf locky-blocky.zip",
+    "zip:pack": "rsync -a --exclude='/node_modules' --exclude='.*' --exclude='*.config.js' --exclude='*.xml.dist' --exclude='*.ruleset.xml' --exclude='package*.json' . locky-blocky && cd locky-blocky",
+    "zip:archive": "zip -9 -qmr locky-blocky.zip locky-blocky",
+    "zip": "npm run clean:zip && npm run zip:pack && npm run zip:archive"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@wordpress/scripts": "^30.18.0"
+    "@wordpress/scripts": "^30.18.0",
+    "rimraf": "^6.0.1"
   }
 }
