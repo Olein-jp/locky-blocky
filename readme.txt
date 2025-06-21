@@ -1,12 +1,10 @@
 === Locky Blocky ===
-Easily toggle the block template lock (contentOnly) in the WordPress block editor toolbar.
-
 Contributors: olein
 Donate link: https://www.amazon.jp/hz/wishlist/ls/WH93ZBVDA08I
-Tags: gutenberg, block, blocks, editor, gutenberg blocks
-Stable tag: 1.0.0
+Tags: editor
 Requires at least: 6.8
 Tested up to: 6.8
+Stable tag: 1.0.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html

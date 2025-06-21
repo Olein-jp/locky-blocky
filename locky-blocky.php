@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Locky Blocky
- * Description: Toggle the WordPress block templateLock (contentOnly) from the block toolbar with ease.
+ * Description: Easily toggle the block template lock (contentOnly) in the WordPress block editor toolbar.
  * Version: 1.0.0
  * Author: Koji Kuno
  * License: GPL-2.0+
