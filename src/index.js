@@ -30,7 +30,7 @@ const withTemplateLockToggle = createHigherOrderComponent( ( BlockEdit ) => {
         const { updateBlockAttributes } = useDispatch( blockEditorStore );
         const templateLock = attributes.templateLock || false;
 
-        // 祖先ブロックにcontentOnlyが設定されているかをチェック
+        // Check if any ancestor block has templateLock set to contentOnly
         const hasAncestorContentOnly = useSelect( ( select ) => {
             const { getBlockParents, getBlock } = select( blockEditorStore );
             const parentIds = getBlockParents( clientId );
