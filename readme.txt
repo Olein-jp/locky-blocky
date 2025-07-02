@@ -4,7 +4,7 @@ Donate link: https://www.amazon.jp/hz/wishlist/ls/WH93ZBVDA08I
 Tags: editor
 Requires at least: 6.8
 Tested up to: 6.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -28,3 +28,6 @@ This plugin can be installed directly from your WordPress dashboard.
 This plugin provides a feature to toggle the `templateLock` (`contentOnly`) directly from the block toolbar. If WordPress Core implements a similar feature in the future, this plugin will be deprecated and no longer maintained.
 
 Thank you for your understanding.
+
+== Github Repository ==
+https://github.com/Olein-jp/locky-blocky
