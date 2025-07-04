@@ -4,7 +4,7 @@
  * Description: Easily toggle the block template lock (contentOnly) in the WordPress block editor toolbar.
  * Requires at least: 6.8
  * Requires PHP: 7.4
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Koji Kuno
  * License: GPL-2.0+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -18,9 +18,10 @@ defined( 'ABSPATH' ) || exit;
  *
  * @since 1.0.0
  */
+// 管理者のみから、フックで権限を変更可能に
 function locky_blocky_controller_enqueue_assets() {
-	// Only load script for administrators.
-	if ( current_user_can( 'administrator' ) ) {
+	$capability = apply_filters( 'locky_blocky_required_capability', 'administrator' );
+	if ( current_user_can( $capability ) ) {
 		wp_enqueue_script(
 			'locky-blocky-controller',
 			plugins_url( 'build/index.js', __FILE__ ),
@@ -29,4 +30,4 @@ function locky_blocky_controller_enqueue_assets() {
 		);
 	}
 }
-add_action( 'enqueue_block_editor_assets', 'locky_blocky_controller_enqueue_assets' );
+add_action( 'enqueue_block_editor_assets', 'locky_blocky_controller_enqueue_assets' );tion( 'enqueue_block_editor_assets', 'locky_blocky_controller_enqueue_assets' );
