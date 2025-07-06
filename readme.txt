@@ -4,7 +4,7 @@ Donate link: https://www.amazon.jp/hz/wishlist/ls/WH93ZBVDA08I
 Tags: editor
 Requires at least: 6.8
 Tested up to: 6.8
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -25,7 +25,7 @@ This plugin can be installed directly from your WordPress dashboard.
 
 == How to use hook ==
 
-`locky_blocky_required_capability` hook allows you to change the permissions to display the lock menu provided by this plugin.
+**locky_blocky_required_capability** hook allows you to change the permissions to display the lock menu provided by this plugin.
 
 `
 add_filter( 'locky_blocky_required_capability', function( $default ) {
