@@ -4,7 +4,7 @@ Donate link: https://www.amazon.jp/hz/wishlist/ls/WH93ZBVDA08I
 Tags: editor
 Requires at least: 6.8
 Tested up to: 6.8
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,22 +27,22 @@ This plugin can be installed directly from your WordPress dashboard.
 
 `locky_blocky_required_capability` hook allows you to change the permissions to display the lock menu provided by this plugin.
 
-```
+`
 add_filter( 'locky_blocky_required_capability', function( $default ) {
     return 'edit_others_posts'; // Editor privileges and above
 });
-```
+`
 
 It can also be made available only to specific user IDs.
 
-```
+`
 add_filter( 'locky_blocky_required_capability', function( $default ) {
     if ( get_current_user_id() === 123 ) {
         return 'read'; // Available for User ID 123 only
     }
     return 'do_not_allow'; // Otherwise, not allowed.
 });
-```
+`
 
 == Important Notice ==
 
